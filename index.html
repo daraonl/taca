@@ -1,7 +1,183 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <body>
 <h1>Dara O'Neill's GitHub Page</h1>
 <p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
+=======
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Taca : Data management and analysis support code for R">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Taca</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/daraon/taca">View on GitHub</a>
+
+          <h1 id="project_title">Taca</h1>
+          <h2 id="project_tagline">Data management and analysis support code for R</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/daraon/taca/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/daraon/taca/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><em>Taca, an Irish word meaning 'support'.</em></p>
+
+<h1>
+<a id="handling-data-in-r" class="anchor" href="#handling-data-in-r" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Handling Data in R.</h1>
+
+<p><a href="https://www.r-project.org/">R</a> is an extremely useful tool for data analytics. However its powerfulness can also be its undoing. Its command-line approach can mean that seemingly small tasks can take a long time to complete. This automatic page generator is the easiest way to create beautiful pages for all of your projects. The <code>taca</code> project is a draft package for R that will help simplify some common tasks within the R software environment, improving upon existing base functions and introducing new commands.</p>
+
+<p>The package currently contains functions to:</p>
+
+<ul>
+<li>generate test datasets</li>
+<li>do quick exports</li>
+<li>identify duplicate data</li>
+<li>generate date intervals</li>
+<li>check the system timezone, and</li>
+<li>provide a detailed summary of the user's current workspace.</li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="r-command-line-command-guide-for-linux-terminal-users" class="anchor" href="#r-command-line-command-guide-for-linux-terminal-users" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>R Command Line Command Guide (for Linux Terminal Users)</h1>
+
+<p>The following commands may provide further assistance to R users. They are designed for Linux terminal users but may also be of assistance to users of R GUIs, including those on alternative operating systems (e.g. Mac or Windows).</p>
+
+<h2>
+<a id="session-management" class="anchor" href="#session-management" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Session Management</h2>
+
+<ul>
+<li>Open R from Command Line: <code>R</code>
+</li>
+<li>Quit R: <code>q()</code>
+</li>
+<li>Terminate R (only do if you have no alternative ways of ending the session): <code>ctrl+z</code>
+</li>
+</ul>
+
+<h2>
+<a id="package-management" class="anchor" href="#package-management" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Package Management</h2>
+
+<ul>
+<li>Get list of packages already installed: <code>.packages(TRUE)</code>
+</li>
+<li>Get detailed info on packages already installed: <code>installed.packages()</code>
+</li>
+<li>List all functions in a package: <code>ls("package:nameOfPackage")</code>
+</li>
+<li>Update packages: <code>update.packages()</code>
+</li>
+<li>Uninstall package: <code>remove.packages(nameOfPackage)</code>
+</li>
+</ul>
+
+<h2>
+<a id="workspace-management" class="anchor" href="#workspace-management" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Workspace Management</h2>
+
+<ul>
+<li>Reload a saved workspace: <code>load(filePath)</code>
+</li>
+<li>List workspace content: <code>ls()</code>
+</li>
+<li>Save workspace: <code>save.image(filePath, compress=TRUE)</code>
+</li>
+<li>Save part of workspace: <code>save(listOfObjectNamesToSave, filePath)</code>
+</li>
+<li>Clear workspace: <code>rm(list=ls())</code>
+or to use regular expressions to remove a subset of objects with related names: <code>rm(list=ls(pattern="RegularExpression"))</code>
+</li>
+<li>Clear workspace, but keep specific object: <code>rm(list=setdiff(ls(), "objectToKeep"))</code>
+or to use regular expressions to keep a subset of objects with related names:<br>
+<code>rm(list=setdiff(ls(), ls(pattern="RegularExpression")))</code>
+</li>
+</ul>
+
+<h2>
+<a id="command-writingrunning" class="anchor" href="#command-writingrunning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Command Writing/Running</h2>
+
+<ul>
+<li>Autocomplete or get a list of autocomplete options: <code>tab</code>
+</li>
+<li>Interrupt a running command: <code>ctrl+c</code>
+</li>
+<li>Get help on a function: <code>?functionName</code>
+</li>
+<li>Leave a help page: <code>q</code>
+</li>
+<li>Read and run a script file direct from disk: <code>source(filePath)</code>
+</li>
+<li>Measure time taken to run code: <code>system.time(codeToRun)</code>
+</li>
+<li>Save console output to disk: <code>sink(filePath)</code>
+</li>
+<li>Stop saving console output to disk: <code>sink(file=NULL)</code>
+</li>
+</ul>
+
+<h2>
+<a id="sundry-topics" class="anchor" href="#sundry-topics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sundry Topics</h2>
+
+<ul>
+<li>Add colour to R command line interface when running Linux, open R and run the following lines:<br>
+<code>download.file("http://www.lepem.ufc.br/jaa/vimr/colorout_1.1-0.tar.gz", destfile = "colorout_1.0-3.tar.gz"); 
+install.packages("colorout_1.0-3.tar.gz", type = "source", repos = NULL); 
+library("colorout")</code>
+</li>
+<li>Change the width of your console (print more on screen simultaneously): <code>options(width=120)</code>
+</li>
+<li>Set all numbers to decimalised: <code>options(scipen=99999)</code>
+</li>
+<li>Convert scientific number to decimalised: <code>format(2.2e-16, scientific=FALSE)</code>
+</li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h1>
+
+<p>Dara O'Neill (<a href="https://github.com/daraon" class="user-mention">@daraon</a>) has authored the <code>taca</code> package and the contents of this page. </p>
+
+<p>Users of this site and the <code>taca</code> software are advised that they are in draft form and caution is therefore required in their use. The author of this site and the code accepts no responsibility or liability for their use.</p>
+
+<h1>
+<a id="help" class="anchor" href="#help" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Help</h1>
+
+<p>For help on installing the package, check out <a href="https://stat.ethz.ch/R-manual/R-devel/library/utils/html/install.packages.html">Karl Broman's helpful guide</a>.
+Further documentation on the package will be generated in due course.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Taca maintained by <a href="https://github.com/daraon">daraon</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
+>>>>>>> origin/master
