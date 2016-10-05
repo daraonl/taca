@@ -1,0 +1,6 @@
+{
+  "name": "Taca",
+  "tagline": "Data management and analysis support code for R",
+  "body": "# Handling Data in R.\r\n[R](https://www.r-project.org/) is an extremely useful tool for data analytics. However its powerfulness can also be its undoing. Its command-line approach can mean that seemingly small tasks can take a long time to complete. This automatic page generator is the easiest way to create beautiful pages for all of your projects. The `taca` project is a draft package for R that will help simplify some common tasks within the software environment.\r\n\r\n# R Command Line Command Guide (for Linux Terminal Users)\r\n## Session Management\r\nOpen R from Command Line\r\n`R`\r\n\r\nQuit R\r\n`q()`\r\n\r\nTerminate R (only do if you have no alternative ways of ending the session)\r\n`ctrl+z`\r\n\r\n# Authors and Contributors\r\nDara O'Neill (@daraon) has authored the `taca' package and the contents of this page.\r\n\r\n# Help\r\nFor help on installing the package, check out [Karl Broman's helpful guide](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/install.packages.html).\r\nFurther documentation on the package will be generated in due course.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
