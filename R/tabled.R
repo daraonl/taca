@@ -1,3 +1,6 @@
 tabled <- function(X,Y) {
-  table(X, Y, useNA="ifany")
+
+  ddd <- data.frame(X, Y)
+
+  table(ddd[,1], ddd[,2], useNA="ifany")
 }
