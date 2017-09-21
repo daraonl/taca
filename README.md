@@ -13,5 +13,6 @@ The package currently contains functions to:
 - sink console output more effectively
 - identify duplicate data
 - generate date intervals
+- produce tables with missing value counts printed by default (if present)
 - check the system timezone, and
 - provide a detailed summary of the user's current workspace.
