@@ -1,3 +1,5 @@
+#' Quickly generate automatically named sink file
+
 sinkfast <- function() {
  if(!(.Platform$OS.type %in% c("windows", "unix"))) {
     stop("Command currently not available for your OS. Use sink() instead.")}

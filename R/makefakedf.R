@@ -1,3 +1,5 @@
+#' Create dataframe of sample randomly generated data
+
 makefakedf <- function(X) {
   data.frame(vInt = sample(1:50, 100, replace = TRUE),
              vDec = (sample.int(101,size = 100, replace = TRUE) - 1)/100,

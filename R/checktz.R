@@ -1,4 +1,6 @@
-checktz <- function(myTZ = "GMT") if (!(Sys.getenv("TZ") %in% 
+#' Test for GMT timezone setting on system
+
+checktz <- function(myTZ = "GMT") if (!(Sys.getenv("TZ") %in%
   myTZ))
   {
   stop("System timezone not correctly set")

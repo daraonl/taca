@@ -1,3 +1,5 @@
+#' Stop writing to sink file generated with sinkfast() function
+
 sinkstop <- function(X) {
   sink()
   sinkfile1 <- sinkfile

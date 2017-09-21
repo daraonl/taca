@@ -1,3 +1,5 @@
+#' Generate detailed list of all objects in Global Environment
+
 lsall <- function(pos = 1, pattern, order.by, decreasing = FALSE,
   head = FALSE, n = 5) {
   napply <- function(names, fn) sapply(names, function(x) fn(get(x,

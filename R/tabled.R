@@ -1,6 +1,13 @@
-tabled <- function(X,Y) {
+#' Simple modification of table command to include missing value counts by
+#' default (if present)
 
-  ddd <- data.frame(X, Y)
+tabled <- function(X,Y=NULL) {
 
-  table(ddd[,1], ddd[,2], useNA="ifany")
+  if(is.null(Y)){
+    table(X, useNA="ifany")
+      } else {
+
+    ddd <- data.frame(X, Y)
+
+    table(ddd[,1], ddd[,2], useNA="ifany")}
 }

@@ -1,3 +1,5 @@
+#' Write object to local disk
+
 writetest <- function(object)
 {
   if (!(.Platform$OS.type %in% "windows"))
