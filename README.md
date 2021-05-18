@@ -2,7 +2,6 @@
 
 'Taca' is an Irish language (Gaeilge) word for 'support'.
 
-Handling Data in R
 R is an extremely useful tool for data analytics. However its powerfulness can also be its undoing. Its command-line approach can mean that seemingly small tasks can take a long time to complete.
 The taca project is a draft package for R that will help simplify some common tasks within the R software environment, improving upon existing base functions and introducing new commands.
 
